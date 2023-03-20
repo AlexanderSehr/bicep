@@ -9,7 +9,7 @@ namespace Bicep.RegistryModuleTool.ModuleFiles
 {
     public class MainBicepTestFile : ModuleFile
     {
-        public const string Directory = "test";
+        public const string Directory = ".test";
 
         public const string FileName = "main.test.bicep";
 
