@@ -25,10 +25,10 @@ namespace Bicep.RegistryModuleTool.ModuleValidators
                 throw new InvalidModuleException($"The module path \"{modulePath}\" in the path \"{directoryPath}\" is invalid. The module path must be in the format of \"{modulePathFormat}\".");
             }
 
-            if (modulePath.Any(char.IsUpper))
-            {
-                throw new InvalidModuleException($"The module path \"{modulePath}\" in the path \"{directoryPath}\" is invalid. All characters in the module path must be in lowercase.");
-            }
+            //if (modulePath.Any(char.IsUpper))
+            //{
+            //    throw new InvalidModuleException($"The module path \"{modulePath}\" in the path \"{directoryPath}\" is invalid. All characters in the module path must be in lowercase.");
+            //}
         }
 
         private static string GetModulePath(IFileSystem fileSystem, string directoryPath)
